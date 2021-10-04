@@ -1,0 +1,129 @@
+/*
+******************************************************
+******* change the breakpoint form you specific ******
+******************************************************
+*/
+$mobile-xs-width: 320;
+$mobile-sm-width: 568;
+$tablet-sm-width: 768;
+$tablet-lg-width: 992;
+$desktop-sm-width: 1200;
+$desktop-lg-width: 1400;
+$lessThan: 1;
+/*
+******************************************************
+********** For specific media query ******************
+******************************************************
+*/
+
+//from 320 -> 567
+@mixin mobile-xs {
+	@media (min-width: #{$mobile-xs-width}px) and (max-width: #{$mobile-sm-width - $lessThan}px) {
+		@content;
+	}
+}
+//from 567 -> 767
+@mixin mobile-sm {
+	@media (min-width: #{$mobile-sm-width}px) and (max-width: #{$tablet-lg-width - $lessThan}px) {
+		@content;
+	}
+}
+
+//from 768 -> 991
+@mixin tablet {
+	@media (min-width: #{$tablet-lg-width}px) and (max-width: #{$tablet-lg-width - $lessThan}px) {
+		@content;
+	}
+}
+//from 992 -> 1199
+@mixin desktop {
+	@media (min-width: #{$tablet-lg-width}px) and (max-width: #{$desktop-sm-width - $lessThan}px) {
+		@content;
+	}
+}
+// from 1200 ->  ∞
+@mixin desktop-lg {
+	@media (min-width: #{$desktop-sm-width}px) {
+		@content;
+	}
+}
+/*
+******************************************************
+********** using only (max-width) ********************
+******************************************************
+*/
+// from 0px to -> 568px
+@mixin to-mobile-sm {
+	@media (max-width: #{$mobile-sm-width }px) {
+		@content;
+	}
+}
+
+// from 0px to -> 768px
+@mixin to-tablet-sm {
+	@media (max-width: #{$tablet-sm-width}px) {
+		@content;
+	}
+}
+
+// from 0px to -> 992px
+@mixin to-tablet-lg {
+	@media (max-width: #{$tablet-lg-width}px) {
+		@content;
+	}
+}
+
+// from 0px to -> 1200px
+@mixin to-desktop-sm {
+	@media (max-width: #{$desktop-sm-width}px) {
+		@content;
+	}
+}
+
+// from 0px to -> 1400px
+@mixin to-desktop-lg {
+	@media (max-width: #{$desktop-lg-width}px) {
+		@content;
+	}
+}
+
+/*
+******************************************************
+********** using only (min-width) ********************
+******************************************************
+*/
+
+// from 568px ->  ∞
+@mixin from-mobile-sm {
+	@media (min-width: #{$mobile-sm-width }px) {
+		@content;
+	}
+}
+
+// from 768 to -> ∞
+@mixin from-tablet-sm {
+	@media (min-width: #{$tablet-sm-width}px) {
+		@content;
+	}
+}
+
+// from 992 to -> ∞
+@mixin from-tablet-lg {
+	@media (min-width: #{$tablet-lg-width}px) {
+		@content;
+	}
+}
+
+// from 1200 to -> ∞
+@mixin from-desktop-sm {
+	@media (min-width: #{$desktop-sm-width}px) {
+		@content;
+	}
+}
+
+// from 1400 to -> ∞
+@mixin from-desktop-lg {
+	@media (min-width: #{$desktop-lg-width}px) {
+		@content;
+	}
+}
