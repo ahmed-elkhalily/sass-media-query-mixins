@@ -14,7 +14,7 @@
 ## how to use it 
 1. download the file.
 2. import it in your main scss file.
-- in your scss main file write the below code:
+- in your scss **main file** write the below code:
 ```
 @import url"media.mixin"
 ```
@@ -39,3 +39,7 @@
     }
   }
   ```
+## how to customize breakpoints:
+
+- in the **_media.mixin.scss** only change the variables
+- you can also make your mixins adding your breakpoints and go on.
