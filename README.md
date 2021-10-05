@@ -14,7 +14,7 @@
 ## how to use it 
 1. download the file.
 2. import it in your main scss file.
-- in your scss **main file** write the below code:
+3.  in your scss **main file** write the below code:
 ```
 @import url"media.mixin"
 ```
