@@ -2,7 +2,7 @@
 
 ![Screenshot from 2021-10-04 02-08-13](https://user-images.githubusercontent.com/23323551/135941002-3602aa71-435f-416d-91a9-66561e172070.png)
 
-## Features in this files
+## Features of using this file:
 
 1. mixins for (min-width) media query.
 2. mixins for (max-width) media query.
