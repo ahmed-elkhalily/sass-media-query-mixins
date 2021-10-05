@@ -11,14 +11,14 @@
 
 
 
-## how to use it 
-1. download the file.
-2. import it in your main scss file.
-3.  in your scss **main file** write the below code:
+## How to use it 
+1. Download the file.
+2. Import it in your main scss file.
+3. In your scss **main file** write like a code below:
 ```
 @import url"media.mixin"
 ```
-4. use the mixins in the mixin file write the below code:
+4. Use the mixins in the mixin file write the below code:
   ```
   @include mobile-sm {
     .elment__here{
@@ -39,7 +39,7 @@
     }
   }
   ```
-## how to customize breakpoints:
+## How to customize breakpoints:
 
 - in the **_media.mixin.scss** only change the variables
 - you can also make your mixins adding your breakpoints and go on.
