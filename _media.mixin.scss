@@ -31,7 +31,7 @@ $lessThan: 1;
 
 //from 768 -> 991
 @mixin tablet {
-	@media (min-width: #{$tablet-lg-width}px) and (max-width: #{$tablet-lg-width - $lessThan}px) {
+	@media (min-width: #{$tablet-sm-width}px) and (max-width: #{$tablet-lg-width - $lessThan}px) {
 		@content;
 	}
 }
