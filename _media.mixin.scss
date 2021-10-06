@@ -24,7 +24,7 @@ $lessThan: 1;
 }
 //from 567 -> 767
 @mixin mobile-sm {
-	@media (min-width: #{$mobile-sm-width}px) and (max-width: #{$tablet-lg-width - $lessThan}px) {
+	@media (min-width: #{$mobile-sm-width}px) and (max-width: #{$tablet-sm-width - $lessThan}px) {
 		@content;
 	}
 }
